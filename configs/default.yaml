@@ -1,0 +1,216 @@
+# QuantumGuard default configuration.
+# Every weight, threshold, window size, and qubit budget referenced in
+# src/quantumguard must be read from here — never hardcoded in module code.
+
+paths:
+  data_raw_dir: "data/raw"
+  drift_scenarios_dir: "data/drift_scenarios"
+  model_dir: "src/quantumguard/models"
+  registry_path: "src/quantumguard/models/registry.json"
+  db_path: "src/quantumguard/storage/quantumguard.db"
+
+# Phase 0: baseline fraud classifier trained on PaySim.
+baseline_model:
+  source_csv: "PS_20174392719_1491204439457_log.csv"
+  label_column: "isFraud"
+  test_size: 0.2
+  random_state: 42
+  n_estimators: 200
+  max_depth: 6
+  learning_rate: 0.1
+  # PaySim is heavily imbalanced (~0.13% fraud); downsample legit rows in
+  # training only, never in evaluation.
+  train_negative_sample_ratio: 20  # legit:fraud ratio kept for training
+
+# Phase 1+: sliding-window streaming.
+windowing:
+  window_size: 500
+  stride: 500
+
+# Phase 1: classical drift statistics.
+classical_drift:
+  n_bins: 10
+  laplace_smoothing: 1.0e-4
+  min_fraud_subset_n: 30  # below this, fraud-subset scores are flagged low-confidence
+  # Caps mapping unbounded statistics onto [0, 1]: score = min(stat / cap, 1).
+  # KS and Hellinger are naturally in [0, 1] and need no cap.
+  normalization:
+    psi_cap: 0.5   # PSI > 0.25 is conventionally "major shift"; 0.5 saturates the score
+    kl_cap: 1.0
+
+# Phase 1: drift scenario generation (benchmark/inject_drift.py).
+drift_injection:
+  n_windows: 100
+  reference_windows: 10        # undrifted reference sample, in units of window_size
+  stream_fraud_rate: 0.08      # boosted vs raw PaySim (~0.13%) so per-window fraud
+                               # subsets clear min_fraud_subset_n
+  drift_start_window: 50
+  gradual_ramp_windows: 30
+  shift_features: ["amount", "oldbalanceOrg", "newbalanceOrig"]
+  # kind: sudden | gradual | fraud_subset | none
+  # scale is multiplicative; offset_std is an additive offset in units of the
+  # feature's reference standard deviation.
+  scenarios:
+    sudden_covariate_shift_v1: {kind: sudden, seed: 101, scale: 1.5, offset_std: 1.0}
+    sudden_covariate_shift_v2: {kind: sudden, seed: 202, scale: 2.0, offset_std: 1.5}
+    # Gradual = regime mixing: each row takes the full shift with probability
+    # ramping 0 -> 1 over gradual_ramp_windows (see injection.apply_drift).
+    gradual_covariate_shift_v1: {kind: gradual, seed: 103, scale: 1.5, offset_std: 1.0}
+    gradual_covariate_shift_v2: {kind: gradual, seed: 204, scale: 2.0, offset_std: 1.5}
+    fraud_subset_shift_v1: {kind: fraud_subset, seed: 105, scale: 2.0, offset_std: 1.5}
+    no_drift_control_v1: {kind: none, seed: 106, scale: 1.0, offset_std: 0.0}
+
+# Phase 1: PCA reduction shared by quantum kernel + classical baselines.
+pca:
+  n_components: 8
+
+# Phase 2: quantum-inspired kernel. Hard methodological caps (kernel
+# concentration), not just perf caps — do not raise without re-justifying.
+quantum_kernel:
+  feature_map: "angle"  # angle | zz | reupload
+  max_qubits: 16
+  max_layers: 2
+  max_window_samples: 300
+  angle_clip_sigmas: 3.0  # PCA outputs are mapped to [-pi, pi] after clipping at this many reference stds
+  subsample_seed: 0
+
+# Phase 2: classical baselines compared against the quantum kernel. They run
+# on the SAME PCA-reduced, subsampled windows as the quantum kernel
+# (preprocess.prepare_windows_from_config).
+baselines:
+  mmd_rbf:
+    bandwidth: "median_heuristic"
+    score_cap: 0.5  # biased MMD^2 mapped to [0,1] via min(mmd2/cap, 1)
+  domain_classifier:
+    model: "logistic_regression"
+    n_folds: 3
+
+# Feature-level drift breakdown (dashboard "Feature Drift Analysis" subsection).
+# Each tracked feature gets a classical fused score (same four statistics as the
+# aggregate CDS, applied to that one column) and a quantum angle-kernel score;
+# hybrid = mean of the two. kind: numeric | categorical | hour_of_day (derived
+# from `step`, which PaySim defines as simulation hours).
+# The 7 tracked features mirror PaySim's actual schema. Origin = the SENDER's
+# account, Destination = the RECIPIENT's. nameDest (destination account ID) is
+# deliberately NOT tracked: it is a near-unique ID string, and distributional
+# statistics (PSI/KL/KS) on a high-cardinality identifier are not meaningful.
+feature_breakdown:
+  features:
+    - {name: "Amount", column: "amount", kind: "numeric"}
+    - {name: "Transaction Type", column: "type", kind: "categorical"}
+    - {name: "Origin Old Balance", column: "oldbalanceOrg", kind: "numeric"}
+    - {name: "Origin New Balance", column: "newbalanceOrig", kind: "numeric"}
+    - {name: "Destination Old Balance", column: "oldbalanceDest", kind: "numeric"}
+    - {name: "Destination New Balance", column: "newbalanceDest", kind: "numeric"}
+    - {name: "Hour", column: "step", kind: "hour_of_day"}
+  # status-dot severity bands on the hybrid score (also used by the UI)
+  severity_warn: 0.2   # >= warn and < crit -> amber
+  severity_crit: 0.5   # >= crit -> red
+
+# Phase 3: Model Health Score fusion weights (must sum to 1.0).
+# MHS = w_cds*(1-CDS) + w_qds*(1-QDS) + w_pc*PC + w_at*AT, so 1.0 = healthy.
+mhs:
+  weights:
+    cds: 0.35   # classical drift score
+    qds: 0.25   # quantum-inspired drift score
+    pc: 0.20    # prediction confidence
+    at: 0.20    # accuracy trend
+  status_bands:
+    healthy_min: 0.75
+    warning_min: 0.5  # below this and above critical_max => warning
+    critical_max: 0.5
+  label_latency_windows: 5  # simulated lag before ground-truth labels arrive
+  at_recent_windows: 3      # accuracy trend averages the last N labeled windows
+  # Drift stats are computed on population AND fraud subset; when true, MHS
+  # fuses the max of the two so fraud-subset-only drift still degrades health.
+  use_fraud_subset_max: true
+
+# Phase 3: trend detector (pure/deterministic, no LLM calls).
+trend_detector:
+  min_series_length: 10          # no decision before this much MHS history
+  rolling_slope_window: 10       # points in the rolling-slope regression
+  slope_significance_alpha: 0.05
+  baseline_window: 10            # first N points define the CUSUM baseline mean/std
+  std_floor: 0.01                # floor on baseline std so quiet series don't divide by ~0
+  cusum_threshold: 5.0           # trip level, in units of baseline std
+  cusum_drift_slack: 0.5         # per-step slack, in units of baseline std
+  mhs_gate: 0.75                 # never trigger while current MHS is still healthy
+  # sudden-vs-gradual classification: a drop of at least sudden_drop_threshold
+  # within the last sudden_drop_lookback windows is "sudden" (narrow retrain
+  # window); any other trigger is "gradual" (wide window).
+  sudden_drop_threshold: 0.15
+  sudden_drop_lookback: 3
+  retrain_window_width:
+    gradual: 20
+    sudden: 5
+
+# Narration is strictly downstream of the decision path (CLAUDE.md): the LLM
+# rendering, when enabled, rephrases an already-frozen TrendDecision and can
+# never influence it. Requires the optional `llm` dependency group and
+# Anthropic API credentials in the environment.
+narration:
+  llm_enabled: false
+  llm_model: "claude-opus-4-8"
+  llm_max_tokens: 1024
+
+# Phase 4: benchmark scenario split. Held-out scenarios are used to tune MHS
+# weights, select the quantum feature map, AND calibrate detection thresholds
+# (mean + threshold_sigmas * std of their pre-drift windows). Evaluation
+# scenarios are disjoint and used only for final reporting. Asserted in
+# run_benchmark.py, not just documented.
+benchmark:
+  threshold_sigmas: 3.0
+  detection_persistence: 2  # consecutive above-threshold windows required for a detection
+  held_out_scenarios:
+    - "sudden_covariate_shift_v1"
+    - "gradual_covariate_shift_v1"
+  evaluation_scenarios:
+    - "sudden_covariate_shift_v2"
+    - "gradual_covariate_shift_v2"
+    - "fraud_subset_shift_v1"
+    - "no_drift_control_v1"
+
+# Phase 5: retraining pipeline.
+retrain:
+  recent_data_fraction: 0.8
+  historical_data_fraction: 0.2
+  eval_holdout_fraction: 0.25  # carved from RECENT data only: the candidate must
+                               # prove itself on the drifted regime, not on history
+  min_recent_rows: 500
+
+# Phase 5: shadow-mode validation of a candidate against the deployed model.
+shadow:
+  replay_windows: 20
+  prediction_threshold: 0.5
+  max_divergences_logged_per_window: 20
+
+# Phase 6: FastAPI service + live dashboard simulation.
+api:
+  host: "127.0.0.1"
+  port: 8000
+  cors_origins: ["http://localhost:5173"]  # Vite dev server
+simulation:
+  default_scenario: "sudden_covariate_shift_v1"
+  window_delay_seconds: 0.6   # live-streaming pace per window
+  predictions_sample_size: 8  # transactions pushed to the Live Predictions panel per window
+  loop_stream: true           # when the stream ends, replay it (window ids keep counting up)
+
+# Live-engine retraining policy, RELATIVE to the deployed model's baseline.
+# The baseline (MHS/CDS/QDS at the deployment window) is captured whenever a
+# model version becomes active and reset on every approval. The pure trend
+# detector in health/trend.py is unchanged and remains the offline/benchmark
+# trigger.
+relative_trigger:
+  health_drop_threshold: 0.25  # trigger when MHS falls this far below the baseline...
+  drift_rise_threshold: 0.25   # ...or CDS/QDS rises this far above the baseline
+  sustain_windows: 3           # breach must hold this many consecutive windows
+  cooldown_windows: 20         # min windows between generated candidates
+
+# Sliding-window model comparison at candidate generation: the new candidate
+# is scored against the deployed model AND the last N previously deployed
+# versions on the same recent-regime holdout; the best performer becomes the
+# proposal (a past version winning = ROLLBACK, still approval-gated).
+model_comparison:
+  buffer_size: 5           # retained past deployed versions (oldest drops off)
+  metric: "fraud_f1"       # winner criterion
+  tiebreak_metric: "roc_auc"

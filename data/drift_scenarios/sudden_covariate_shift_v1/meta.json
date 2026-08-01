@@ -1,0 +1,22 @@
+{
+  "name": "sudden_covariate_shift_v1",
+  "kind": "sudden",
+  "seed": 101,
+  "scale": 1.5,
+  "offset_std": 1.0,
+  "drift_start_window": 50,
+  "gradual_ramp_windows": 30,
+  "n_windows": 100,
+  "window_size": 500,
+  "stream_fraud_rate": 0.08,
+  "shift_features": [
+    "amount",
+    "oldbalanceOrg",
+    "newbalanceOrig"
+  ],
+  "feature_stds": {
+    "amount": 920366.2822366292,
+    "oldbalanceOrg": 2900491.3402296407,
+    "newbalanceOrig": 2745349.983250395
+  }
+}

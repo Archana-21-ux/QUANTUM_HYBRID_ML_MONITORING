@@ -1,0 +1,26 @@
+{
+  "classical_cds": {
+    "fraud": 0.4840209834674899,
+    "population": 0.04219547025573679
+  },
+  "domain_classifier": {
+    "fraud": 0.22326405575740713,
+    "population": 0.10898496999987026
+  },
+  "mmd_rbf": {
+    "fraud": 0.041715956738874564,
+    "population": 0.008589474115563588
+  },
+  "quantum_angle": {
+    "fraud": 0.12984312730692804,
+    "population": 0.08600745486315951
+  },
+  "quantum_reupload": {
+    "fraud": 0.15256869502767917,
+    "population": 0.09928478324502811
+  },
+  "quantum_zz": {
+    "fraud": 0.1372490636895498,
+    "population": 0.06875214822380293
+  }
+}

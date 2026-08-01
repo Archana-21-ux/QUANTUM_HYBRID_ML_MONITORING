@@ -1,0 +1,22 @@
+{
+  "name": "fraud_subset_shift_v1",
+  "kind": "fraud_subset",
+  "seed": 105,
+  "scale": 2.0,
+  "offset_std": 1.5,
+  "drift_start_window": 50,
+  "gradual_ramp_windows": 30,
+  "n_windows": 100,
+  "window_size": 500,
+  "stream_fraud_rate": 0.08,
+  "shift_features": [
+    "amount",
+    "oldbalanceOrg",
+    "newbalanceOrig"
+  ],
+  "feature_stds": {
+    "amount": 806438.9381614277,
+    "oldbalanceOrg": 3055113.6603357843,
+    "newbalanceOrig": 3007468.1244579637
+  }
+}

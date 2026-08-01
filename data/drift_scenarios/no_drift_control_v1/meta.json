@@ -1,0 +1,22 @@
+{
+  "name": "no_drift_control_v1",
+  "kind": "none",
+  "seed": 106,
+  "scale": 1.0,
+  "offset_std": 0.0,
+  "drift_start_window": 50,
+  "gradual_ramp_windows": 30,
+  "n_windows": 100,
+  "window_size": 500,
+  "stream_fraud_rate": 0.08,
+  "shift_features": [
+    "amount",
+    "oldbalanceOrg",
+    "newbalanceOrig"
+  ],
+  "feature_stds": {
+    "amount": 763884.5465916138,
+    "oldbalanceOrg": 2875672.33090668,
+    "newbalanceOrig": 2824729.4773130175
+  }
+}
