@@ -1,0 +1,3569 @@
+{
+  "models": [
+    {
+      "version": "v1",
+      "model_filename": "Model_v1.pkl",
+      "metrics": {
+        "fraud_precision": 0.5043859649122807,
+        "fraud_recall": 0.9799147900182593,
+        "fraud_f1": 0.6659772492244054,
+        "roc_auc": 0.9998093493578404,
+        "average_precision": 0.9551660255286946,
+        "n_test": 1272524,
+        "n_test_fraud": 1643
+      },
+      "trained_on": "PS_20174392719_1491204439457_log.csv",
+      "created_at": "2026-07-17T17:41:00.878778+00:00",
+      "deployed": false
+    },
+    {
+      "version": "v2",
+      "model_filename": "Model_v2.pkl",
+      "metrics": {
+        "fraud_precision": 0.9555555555555556,
+        "fraud_recall": 0.8958333333333334,
+        "fraud_f1": 0.9247311827956989,
+        "roc_auc": 0.9975086655112653,
+        "average_precision": 0.9663004284895171,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window50 recent[46,50]+historical",
+      "deployed": false,
+      "created_at": "2026-07-18T08:30:33.507836+00:00"
+    },
+    {
+      "version": "v3",
+      "model_filename": "Model_v3.pkl",
+      "metrics": {
+        "fraud_precision": 0.9555555555555556,
+        "fraud_recall": 0.8958333333333334,
+        "fraud_f1": 0.9247311827956989,
+        "roc_auc": 0.9975086655112653,
+        "average_precision": 0.9663004284895171,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window50 recent[46,50]+historical",
+      "deployed": false,
+      "created_at": "2026-07-18T08:59:56.521705+00:00"
+    },
+    {
+      "version": "v4",
+      "model_filename": "Model_v4.pkl",
+      "metrics": {
+        "fraud_precision": 0.9361702127659575,
+        "fraud_recall": 0.9166666666666666,
+        "fraud_f1": 0.9263157894736842,
+        "roc_auc": 0.9980502599653379,
+        "average_precision": 0.9824965369766091,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window51 recent[47,51]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T08:57:23.696432+00:00"
+    },
+    {
+      "version": "v5",
+      "model_filename": "Model_v5.pkl",
+      "metrics": {
+        "fraud_precision": 0.9555555555555556,
+        "fraud_recall": 0.8958333333333334,
+        "fraud_f1": 0.9247311827956989,
+        "roc_auc": 0.9975086655112653,
+        "average_precision": 0.9663004284895171,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window50 recent[46,50]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T10:00:18.467816+00:00"
+    },
+    {
+      "version": "v6",
+      "model_filename": "Model_v6.pkl",
+      "metrics": {
+        "fraud_precision": 0.972972972972973,
+        "fraud_recall": 0.9278350515463918,
+        "fraud_f1": 0.9498680738786279,
+        "roc_auc": 0.9950174801727453,
+        "average_precision": 0.990195022337542,
+        "n_test": 2500,
+        "n_test_fraud": 194
+      },
+      "trained_on": "retrain@window62 recent[43,62]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T10:19:36.725152+00:00"
+    },
+    {
+      "version": "v7",
+      "model_filename": "Model_v7.pkl",
+      "metrics": {
+        "fraud_precision": 0.9555555555555556,
+        "fraud_recall": 0.8958333333333334,
+        "fraud_f1": 0.9247311827956989,
+        "roc_auc": 0.9975086655112653,
+        "average_precision": 0.9663004284895171,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window50 recent[46,50]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:12:00.244904+00:00"
+    },
+    {
+      "version": "v8",
+      "model_filename": "Model_v8.pkl",
+      "metrics": {
+        "fraud_precision": 0.9555555555555556,
+        "fraud_recall": 0.8958333333333334,
+        "fraud_f1": 0.9247311827956989,
+        "roc_auc": 0.9975086655112653,
+        "average_precision": 0.9663004284895171,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window50 recent[46,50]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:28:33.052074+00:00"
+    },
+    {
+      "version": "v9",
+      "model_filename": "Model_v9.pkl",
+      "metrics": {
+        "fraud_precision": 0.9776536312849162,
+        "fraud_recall": 0.8928571428571429,
+        "fraud_f1": 0.9333333333333333,
+        "roc_auc": 0.9984698306405896,
+        "average_precision": 0.9848658980700279,
+        "n_test": 2500,
+        "n_test_fraud": 196
+      },
+      "trained_on": "retrain@window70 recent[51,70]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:29:02.163604+00:00"
+    },
+    {
+      "version": "v10",
+      "model_filename": "Model_v10.pkl",
+      "metrics": {
+        "fraud_precision": 0.9693877551020408,
+        "fraud_recall": 0.9547738693467337,
+        "fraud_f1": 0.9620253164556962,
+        "roc_auc": 0.9961563576247163,
+        "average_precision": 0.9875287945285736,
+        "n_test": 2500,
+        "n_test_fraud": 199
+      },
+      "trained_on": "retrain@window90 recent[71,90]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:29:31.865423+00:00"
+    },
+    {
+      "version": "v11",
+      "model_filename": "Model_v11.pkl",
+      "metrics": {
+        "fraud_precision": 0.9555555555555556,
+        "fraud_recall": 0.8958333333333334,
+        "fraud_f1": 0.9247311827956989,
+        "roc_auc": 0.9975086655112653,
+        "average_precision": 0.9663004284895171,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window150 recent[146,150]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:30:38.720728+00:00"
+    },
+    {
+      "version": "v12",
+      "model_filename": "Model_v12.pkl",
+      "metrics": {
+        "fraud_precision": 0.9776536312849162,
+        "fraud_recall": 0.8928571428571429,
+        "fraud_f1": 0.9333333333333333,
+        "roc_auc": 0.9984698306405896,
+        "average_precision": 0.9848658980700279,
+        "n_test": 2500,
+        "n_test_fraud": 196
+      },
+      "trained_on": "retrain@window170 recent[151,170]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:31:07.763492+00:00"
+    },
+    {
+      "version": "v13",
+      "model_filename": "Model_v13.pkl",
+      "metrics": {
+        "fraud_precision": 0.9693877551020408,
+        "fraud_recall": 0.9547738693467337,
+        "fraud_f1": 0.9620253164556962,
+        "roc_auc": 0.9961563576247163,
+        "average_precision": 0.9875287945285736,
+        "n_test": 2500,
+        "n_test_fraud": 199
+      },
+      "trained_on": "retrain@window190 recent[171,190]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:31:34.121624+00:00"
+    },
+    {
+      "version": "v14",
+      "model_filename": "Model_v14.pkl",
+      "metrics": {
+        "fraud_precision": 0.9555555555555556,
+        "fraud_recall": 0.8958333333333334,
+        "fraud_f1": 0.9247311827956989,
+        "roc_auc": 0.9975086655112653,
+        "average_precision": 0.9663004284895171,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window250 recent[246,250]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:32:35.733942+00:00"
+    },
+    {
+      "version": "v15",
+      "model_filename": "Model_v15.pkl",
+      "metrics": {
+        "fraud_precision": 0.9555555555555556,
+        "fraud_recall": 0.8958333333333334,
+        "fraud_f1": 0.9247311827956989,
+        "roc_auc": 0.9975086655112653,
+        "average_precision": 0.9663004284895171,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window50 recent[46,50]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:37:07.514030+00:00"
+    },
+    {
+      "version": "v16",
+      "model_filename": "Model_v16.pkl",
+      "metrics": {
+        "fraud_precision": 0.9776536312849162,
+        "fraud_recall": 0.8928571428571429,
+        "fraud_f1": 0.9333333333333333,
+        "roc_auc": 0.9984698306405896,
+        "average_precision": 0.9848658980700279,
+        "n_test": 2500,
+        "n_test_fraud": 196
+      },
+      "trained_on": "retrain@window70 recent[51,70]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:37:37.341580+00:00"
+    },
+    {
+      "version": "v17",
+      "model_filename": "Model_v17.pkl",
+      "metrics": {
+        "fraud_precision": 0.9693877551020408,
+        "fraud_recall": 0.9547738693467337,
+        "fraud_f1": 0.9620253164556962,
+        "roc_auc": 0.9961563576247163,
+        "average_precision": 0.9875287945285736,
+        "n_test": 2500,
+        "n_test_fraud": 199
+      },
+      "trained_on": "retrain@window90 recent[71,90]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:38:05.043255+00:00"
+    },
+    {
+      "version": "v18",
+      "model_filename": "Model_v18.pkl",
+      "metrics": {
+        "fraud_precision": 0.9555555555555556,
+        "fraud_recall": 0.8958333333333334,
+        "fraud_f1": 0.9247311827956989,
+        "roc_auc": 0.9975086655112653,
+        "average_precision": 0.9663004284895171,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window150 recent[146,150]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:39:12.123366+00:00"
+    },
+    {
+      "version": "v19",
+      "model_filename": "Model_v19.pkl",
+      "metrics": {
+        "fraud_precision": 0.9776536312849162,
+        "fraud_recall": 0.8928571428571429,
+        "fraud_f1": 0.9333333333333333,
+        "roc_auc": 0.9984698306405896,
+        "average_precision": 0.9848658980700279,
+        "n_test": 2500,
+        "n_test_fraud": 196
+      },
+      "trained_on": "retrain@window170 recent[151,170]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:39:40.082413+00:00"
+    },
+    {
+      "version": "v20",
+      "model_filename": "Model_v20.pkl",
+      "metrics": {
+        "fraud_precision": 0.9693877551020408,
+        "fraud_recall": 0.9547738693467337,
+        "fraud_f1": 0.9620253164556962,
+        "roc_auc": 0.9961563576247163,
+        "average_precision": 0.9875287945285736,
+        "n_test": 2500,
+        "n_test_fraud": 199
+      },
+      "trained_on": "retrain@window190 recent[171,190]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:40:05.748190+00:00"
+    },
+    {
+      "version": "v21",
+      "model_filename": "Model_v21.pkl",
+      "metrics": {
+        "fraud_precision": 0.9555555555555556,
+        "fraud_recall": 0.8958333333333334,
+        "fraud_f1": 0.9247311827956989,
+        "roc_auc": 0.9975086655112653,
+        "average_precision": 0.9663004284895171,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window250 recent[246,250]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:41:09.943644+00:00"
+    },
+    {
+      "version": "v22",
+      "model_filename": "Model_v22.pkl",
+      "metrics": {
+        "fraud_precision": 0.9776536312849162,
+        "fraud_recall": 0.8928571428571429,
+        "fraud_f1": 0.9333333333333333,
+        "roc_auc": 0.9984698306405896,
+        "average_precision": 0.9848658980700279,
+        "n_test": 2500,
+        "n_test_fraud": 196
+      },
+      "trained_on": "retrain@window270 recent[251,270]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:41:38.641931+00:00"
+    },
+    {
+      "version": "v23",
+      "model_filename": "Model_v23.pkl",
+      "metrics": {
+        "fraud_precision": 0.9693877551020408,
+        "fraud_recall": 0.9547738693467337,
+        "fraud_f1": 0.9620253164556962,
+        "roc_auc": 0.9961563576247163,
+        "average_precision": 0.9875287945285736,
+        "n_test": 2500,
+        "n_test_fraud": 199
+      },
+      "trained_on": "retrain@window290 recent[271,290]+historical",
+      "deployed": false,
+      "created_at": "2026-07-19T14:42:03.991598+00:00"
+    },
+    {
+      "version": "v24",
+      "model_filename": "Model_v24.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window52 recent[48,52]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T13:48:57.619584+00:00"
+    },
+    {
+      "version": "v25",
+      "model_filename": "Model_v25.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window72 recent[53,72]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T13:49:33.822443+00:00"
+    },
+    {
+      "version": "v26",
+      "model_filename": "Model_v26.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window92 recent[73,92]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T13:50:23.492015+00:00"
+    },
+    {
+      "version": "v27",
+      "model_filename": "Model_v27.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window152 recent[148,152]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T13:52:00.972052+00:00"
+    },
+    {
+      "version": "v28",
+      "model_filename": "Model_v28.pkl",
+      "metrics": {
+        "fraud_precision": 0.979381443298969,
+        "fraud_recall": 0.945273631840796,
+        "fraud_f1": 0.9620253164556962,
+        "roc_auc": 0.9980956461710586,
+        "average_precision": 0.9920173231409002,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window56 recent[37,56]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T13:55:20.441421+00:00"
+    },
+    {
+      "version": "v29",
+      "model_filename": "Model_v29.pkl",
+      "metrics": {
+        "fraud_precision": 0.9565217391304348,
+        "fraud_recall": 0.9383886255924171,
+        "fraud_f1": 0.9473684210526315,
+        "roc_auc": 0.997103393729334,
+        "average_precision": 0.9856842124156274,
+        "n_test": 2500,
+        "n_test_fraud": 211
+      },
+      "trained_on": "retrain@window76 recent[57,76]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T13:55:50.584385+00:00"
+    },
+    {
+      "version": "v30",
+      "model_filename": "Model_v30.pkl",
+      "metrics": {
+        "fraud_precision": 0.9842105263157894,
+        "fraud_recall": 0.9303482587064676,
+        "fraud_f1": 0.9565217391304348,
+        "roc_auc": 0.9995455519271845,
+        "average_precision": 0.9950489788601175,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window96 recent[77,96]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T13:56:23.533318+00:00"
+    },
+    {
+      "version": "v31",
+      "model_filename": "Model_v31.pkl",
+      "metrics": {
+        "fraud_precision": 0.979381443298969,
+        "fraud_recall": 0.945273631840796,
+        "fraud_f1": 0.9620253164556962,
+        "roc_auc": 0.9980956461710586,
+        "average_precision": 0.9920173231409002,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window156 recent[137,156]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T13:57:36.979129+00:00"
+    },
+    {
+      "version": "v32",
+      "model_filename": "Model_v32.pkl",
+      "metrics": {
+        "fraud_precision": 0.9565217391304348,
+        "fraud_recall": 0.9383886255924171,
+        "fraud_f1": 0.9473684210526315,
+        "roc_auc": 0.997103393729334,
+        "average_precision": 0.9856842124156274,
+        "n_test": 2500,
+        "n_test_fraud": 211
+      },
+      "trained_on": "retrain@window176 recent[157,176]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T13:58:08.915989+00:00"
+    },
+    {
+      "version": "v33",
+      "model_filename": "Model_v33.pkl",
+      "metrics": {
+        "fraud_precision": 0.9842105263157894,
+        "fraud_recall": 0.9303482587064676,
+        "fraud_f1": 0.9565217391304348,
+        "roc_auc": 0.9995455519271845,
+        "average_precision": 0.9950489788601175,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window196 recent[177,196]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T13:58:46.074415+00:00"
+    },
+    {
+      "version": "v34",
+      "model_filename": "Model_v34.pkl",
+      "metrics": {
+        "fraud_precision": 0.979381443298969,
+        "fraud_recall": 0.945273631840796,
+        "fraud_f1": 0.9620253164556962,
+        "roc_auc": 0.9980956461710586,
+        "average_precision": 0.9920173231409002,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window256 recent[237,256]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T14:00:01.576311+00:00"
+    },
+    {
+      "version": "v35",
+      "model_filename": "Model_v35.pkl",
+      "metrics": {
+        "fraud_precision": 0.9565217391304348,
+        "fraud_recall": 0.9383886255924171,
+        "fraud_f1": 0.9473684210526315,
+        "roc_auc": 0.997103393729334,
+        "average_precision": 0.9856842124156274,
+        "n_test": 2500,
+        "n_test_fraud": 211
+      },
+      "trained_on": "retrain@window276 recent[257,276]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T14:00:35.793061+00:00"
+    },
+    {
+      "version": "v36",
+      "model_filename": "Model_v36.pkl",
+      "metrics": {
+        "fraud_precision": 0.9842105263157894,
+        "fraud_recall": 0.9303482587064676,
+        "fraud_f1": 0.9565217391304348,
+        "roc_auc": 0.9995455519271845,
+        "average_precision": 0.9950489788601175,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window296 recent[277,296]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T14:01:09.635712+00:00"
+    },
+    {
+      "version": "v37",
+      "model_filename": "Model_v37.pkl",
+      "metrics": {
+        "fraud_precision": 0.979381443298969,
+        "fraud_recall": 0.945273631840796,
+        "fraud_f1": 0.9620253164556962,
+        "roc_auc": 0.9980956461710586,
+        "average_precision": 0.9920173231409002,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window356 recent[337,356]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T14:02:34.081291+00:00"
+    },
+    {
+      "version": "v38",
+      "model_filename": "Model_v38.pkl",
+      "metrics": {
+        "fraud_precision": 0.9565217391304348,
+        "fraud_recall": 0.9383886255924171,
+        "fraud_f1": 0.9473684210526315,
+        "roc_auc": 0.997103393729334,
+        "average_precision": 0.9856842124156274,
+        "n_test": 2500,
+        "n_test_fraud": 211
+      },
+      "trained_on": "retrain@window376 recent[357,376]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T14:03:20.330938+00:00"
+    },
+    {
+      "version": "v39",
+      "model_filename": "Model_v39.pkl",
+      "metrics": {
+        "fraud_precision": 0.9842105263157894,
+        "fraud_recall": 0.9303482587064676,
+        "fraud_f1": 0.9565217391304348,
+        "roc_auc": 0.9995455519271845,
+        "average_precision": 0.9950489788601175,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window396 recent[377,396]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T14:04:09.339576+00:00"
+    },
+    {
+      "version": "v40",
+      "model_filename": "Model_v40.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window52 recent[48,52]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T14:06:34.287849+00:00"
+    },
+    {
+      "version": "v41",
+      "model_filename": "Model_v41.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window72 recent[53,72]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T14:07:18.094347+00:00"
+    },
+    {
+      "version": "v42",
+      "model_filename": "Model_v42.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window92 recent[73,92]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T14:08:03.935227+00:00"
+    },
+    {
+      "version": "v43",
+      "model_filename": "Model_v43.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window152 recent[148,152]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T14:09:33.088767+00:00"
+    },
+    {
+      "version": "v44",
+      "model_filename": "Model_v44.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window172 recent[153,172]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T14:10:21.817215+00:00"
+    },
+    {
+      "version": "v45",
+      "model_filename": "Model_v45.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window192 recent[173,192]+historical",
+      "deployed": false,
+      "created_at": "2026-07-20T14:11:11.664491+00:00"
+    },
+    {
+      "version": "v46",
+      "model_filename": "Model_v46.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window52 recent[48,52]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:17:44.585290+00:00"
+    },
+    {
+      "version": "v47",
+      "model_filename": "Model_v47.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window72 recent[53,72]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:18:13.411222+00:00"
+    },
+    {
+      "version": "v48",
+      "model_filename": "Model_v48.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window52 recent[48,52]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:21:25.410838+00:00"
+    },
+    {
+      "version": "v49",
+      "model_filename": "Model_v49.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window72 recent[53,72]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:21:47.514253+00:00"
+    },
+    {
+      "version": "v50",
+      "model_filename": "Model_v50.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window92 recent[73,92]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:22:10.015484+00:00"
+    },
+    {
+      "version": "v51",
+      "model_filename": "Model_v51.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window152 recent[148,152]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:23:10.368350+00:00"
+    },
+    {
+      "version": "v52",
+      "model_filename": "Model_v52.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window172 recent[153,172]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:23:36.299194+00:00"
+    },
+    {
+      "version": "v53",
+      "model_filename": "Model_v53.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window192 recent[173,192]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:24:01.738184+00:00"
+    },
+    {
+      "version": "v54",
+      "model_filename": "Model_v54.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window252 recent[248,252]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:24:59.454245+00:00"
+    },
+    {
+      "version": "v55",
+      "model_filename": "Model_v55.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window272 recent[253,272]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:25:20.667900+00:00"
+    },
+    {
+      "version": "v56",
+      "model_filename": "Model_v56.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window292 recent[273,292]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:25:41.845919+00:00"
+    },
+    {
+      "version": "v57",
+      "model_filename": "Model_v57.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window352 recent[348,352]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:26:36.880477+00:00"
+    },
+    {
+      "version": "v58",
+      "model_filename": "Model_v58.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window372 recent[353,372]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:26:57.841023+00:00"
+    },
+    {
+      "version": "v59",
+      "model_filename": "Model_v59.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window392 recent[373,392]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:27:19.486527+00:00"
+    },
+    {
+      "version": "v60",
+      "model_filename": "Model_v60.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window452 recent[448,452]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:28:14.881093+00:00"
+    },
+    {
+      "version": "v61",
+      "model_filename": "Model_v61.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window472 recent[453,472]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:28:36.931587+00:00"
+    },
+    {
+      "version": "v62",
+      "model_filename": "Model_v62.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window492 recent[473,492]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:28:59.116161+00:00"
+    },
+    {
+      "version": "v63",
+      "model_filename": "Model_v63.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window552 recent[548,552]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:29:56.647919+00:00"
+    },
+    {
+      "version": "v64",
+      "model_filename": "Model_v64.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window572 recent[553,572]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:30:17.741940+00:00"
+    },
+    {
+      "version": "v65",
+      "model_filename": "Model_v65.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window592 recent[573,592]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:30:43.677766+00:00"
+    },
+    {
+      "version": "v66",
+      "model_filename": "Model_v66.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window652 recent[648,652]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:31:58.745850+00:00"
+    },
+    {
+      "version": "v67",
+      "model_filename": "Model_v67.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window672 recent[653,672]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:32:20.407652+00:00"
+    },
+    {
+      "version": "v68",
+      "model_filename": "Model_v68.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window692 recent[673,692]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:32:42.461021+00:00"
+    },
+    {
+      "version": "v69",
+      "model_filename": "Model_v69.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window752 recent[748,752]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:33:37.861871+00:00"
+    },
+    {
+      "version": "v70",
+      "model_filename": "Model_v70.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window772 recent[753,772]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:33:59.851895+00:00"
+    },
+    {
+      "version": "v71",
+      "model_filename": "Model_v71.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window792 recent[773,792]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:34:21.738309+00:00"
+    },
+    {
+      "version": "v72",
+      "model_filename": "Model_v72.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window852 recent[848,852]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:35:25.837789+00:00"
+    },
+    {
+      "version": "v73",
+      "model_filename": "Model_v73.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window872 recent[853,872]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:35:51.382470+00:00"
+    },
+    {
+      "version": "v74",
+      "model_filename": "Model_v74.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window892 recent[873,892]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:36:14.974948+00:00"
+    },
+    {
+      "version": "v75",
+      "model_filename": "Model_v75.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window952 recent[948,952]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:37:16.838875+00:00"
+    },
+    {
+      "version": "v76",
+      "model_filename": "Model_v76.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window972 recent[953,972]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:37:38.266501+00:00"
+    },
+    {
+      "version": "v77",
+      "model_filename": "Model_v77.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window992 recent[973,992]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:38:01.457745+00:00"
+    },
+    {
+      "version": "v78",
+      "model_filename": "Model_v78.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window1052 recent[1048,1052]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:39:00.064166+00:00"
+    },
+    {
+      "version": "v79",
+      "model_filename": "Model_v79.pkl",
+      "metrics": {
+        "fraud_precision": 0.979381443298969,
+        "fraud_recall": 0.945273631840796,
+        "fraud_f1": 0.9620253164556962,
+        "roc_auc": 0.9980956461710586,
+        "average_precision": 0.9920173231409002,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window56 recent[37,56]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:46:01.452060+00:00"
+    },
+    {
+      "version": "v80",
+      "model_filename": "Model_v80.pkl",
+      "metrics": {
+        "fraud_precision": 0.9565217391304348,
+        "fraud_recall": 0.9383886255924171,
+        "fraud_f1": 0.9473684210526315,
+        "roc_auc": 0.997103393729334,
+        "average_precision": 0.9856842124156274,
+        "n_test": 2500,
+        "n_test_fraud": 211
+      },
+      "trained_on": "retrain@window76 recent[57,76]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:46:24.878610+00:00"
+    },
+    {
+      "version": "v81",
+      "model_filename": "Model_v81.pkl",
+      "metrics": {
+        "fraud_precision": 0.9842105263157894,
+        "fraud_recall": 0.9303482587064676,
+        "fraud_f1": 0.9565217391304348,
+        "roc_auc": 0.9995455519271845,
+        "average_precision": 0.9950489788601175,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window96 recent[77,96]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:46:51.189603+00:00"
+    },
+    {
+      "version": "v82",
+      "model_filename": "Model_v82.pkl",
+      "metrics": {
+        "fraud_precision": 0.979381443298969,
+        "fraud_recall": 0.945273631840796,
+        "fraud_f1": 0.9620253164556962,
+        "roc_auc": 0.9980956461710586,
+        "average_precision": 0.9920173231409002,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window156 recent[137,156]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:47:55.204798+00:00"
+    },
+    {
+      "version": "v83",
+      "model_filename": "Model_v83.pkl",
+      "metrics": {
+        "fraud_precision": 0.9565217391304348,
+        "fraud_recall": 0.9383886255924171,
+        "fraud_f1": 0.9473684210526315,
+        "roc_auc": 0.997103393729334,
+        "average_precision": 0.9856842124156274,
+        "n_test": 2500,
+        "n_test_fraud": 211
+      },
+      "trained_on": "retrain@window176 recent[157,176]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:48:20.521477+00:00"
+    },
+    {
+      "version": "v84",
+      "model_filename": "Model_v84.pkl",
+      "metrics": {
+        "fraud_precision": 0.9842105263157894,
+        "fraud_recall": 0.9303482587064676,
+        "fraud_f1": 0.9565217391304348,
+        "roc_auc": 0.9995455519271845,
+        "average_precision": 0.9950489788601175,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window196 recent[177,196]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:48:48.621588+00:00"
+    },
+    {
+      "version": "v85",
+      "model_filename": "Model_v85.pkl",
+      "metrics": {
+        "fraud_precision": 0.979381443298969,
+        "fraud_recall": 0.945273631840796,
+        "fraud_f1": 0.9620253164556962,
+        "roc_auc": 0.9980956461710586,
+        "average_precision": 0.9920173231409002,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window256 recent[237,256]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:50:00.796566+00:00"
+    },
+    {
+      "version": "v86",
+      "model_filename": "Model_v86.pkl",
+      "metrics": {
+        "fraud_precision": 0.9565217391304348,
+        "fraud_recall": 0.9383886255924171,
+        "fraud_f1": 0.9473684210526315,
+        "roc_auc": 0.997103393729334,
+        "average_precision": 0.9856842124156274,
+        "n_test": 2500,
+        "n_test_fraud": 211
+      },
+      "trained_on": "retrain@window276 recent[257,276]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:50:27.558742+00:00"
+    },
+    {
+      "version": "v87",
+      "model_filename": "Model_v87.pkl",
+      "metrics": {
+        "fraud_precision": 0.9842105263157894,
+        "fraud_recall": 0.9303482587064676,
+        "fraud_f1": 0.9565217391304348,
+        "roc_auc": 0.9995455519271845,
+        "average_precision": 0.9950489788601175,
+        "n_test": 2500,
+        "n_test_fraud": 201
+      },
+      "trained_on": "retrain@window296 recent[277,296]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:50:56.069716+00:00"
+    },
+    {
+      "version": "v88",
+      "model_filename": "Model_v88.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window52 recent[48,52]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:52:55.199214+00:00"
+    },
+    {
+      "version": "v89",
+      "model_filename": "Model_v89.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window72 recent[53,72]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:53:21.273735+00:00"
+    },
+    {
+      "version": "v90",
+      "model_filename": "Model_v90.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window92 recent[73,92]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:53:48.679817+00:00"
+    },
+    {
+      "version": "v91",
+      "model_filename": "Model_v91.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window152 recent[148,152]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:54:58.576995+00:00"
+    },
+    {
+      "version": "v92",
+      "model_filename": "Model_v92.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window172 recent[153,172]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:55:27.015483+00:00"
+    },
+    {
+      "version": "v93",
+      "model_filename": "Model_v93.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window192 recent[173,192]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:55:55.383301+00:00"
+    },
+    {
+      "version": "v94",
+      "model_filename": "Model_v94.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window252 recent[248,252]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:57:05.272751+00:00"
+    },
+    {
+      "version": "v95",
+      "model_filename": "Model_v95.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window272 recent[253,272]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:57:33.576659+00:00"
+    },
+    {
+      "version": "v96",
+      "model_filename": "Model_v96.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window292 recent[273,292]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:58:03.523291+00:00"
+    },
+    {
+      "version": "v97",
+      "model_filename": "Model_v97.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window352 recent[348,352]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T15:59:14.294884+00:00"
+    },
+    {
+      "version": "v98",
+      "model_filename": "Model_v98.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window52 recent[48,52]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T16:18:14.838035+00:00"
+    },
+    {
+      "version": "v99",
+      "model_filename": "Model_v99.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window72 recent[53,72]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T16:18:38.932588+00:00"
+    },
+    {
+      "version": "v100",
+      "model_filename": "Model_v100.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window92 recent[73,92]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T16:19:02.720160+00:00"
+    },
+    {
+      "version": "v101",
+      "model_filename": "Model_v101.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window152 recent[148,152]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T16:20:04.486699+00:00"
+    },
+    {
+      "version": "v102",
+      "model_filename": "Model_v102.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window172 recent[153,172]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T16:20:30.363069+00:00"
+    },
+    {
+      "version": "v103",
+      "model_filename": "Model_v103.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window192 recent[173,192]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T16:20:55.092021+00:00"
+    },
+    {
+      "version": "v104",
+      "model_filename": "Model_v104.pkl",
+      "metrics": {
+        "fraud_precision": 0.9595959595959596,
+        "fraud_recall": 0.95,
+        "fraud_f1": 0.9547738693467337,
+        "roc_auc": 0.9994065217391304,
+        "average_precision": 0.9933259177109177,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window60 recent[41,60]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T16:23:38.106673+00:00"
+    },
+    {
+      "version": "v105",
+      "model_filename": "Model_v105.pkl",
+      "metrics": {
+        "fraud_precision": 0.9692307692307692,
+        "fraud_recall": 0.9310344827586207,
+        "fraud_f1": 0.949748743718593,
+        "roc_auc": 0.9994145286956,
+        "average_precision": 0.9935656973194105,
+        "n_test": 2500,
+        "n_test_fraud": 203
+      },
+      "trained_on": "retrain@window80 recent[61,80]+historical",
+      "deployed": false,
+      "created_at": "2026-07-22T16:24:03.778897+00:00"
+    },
+    {
+      "version": "v106",
+      "model_filename": "Model_v106.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window52 recent[48,52]+historical",
+      "deployed": false,
+      "created_at": "2026-07-23T13:35:12.669950+00:00"
+    },
+    {
+      "version": "v107",
+      "model_filename": "Model_v107.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window72 recent[53,72]+historical",
+      "deployed": false,
+      "created_at": "2026-07-23T13:35:38.339390+00:00"
+    },
+    {
+      "version": "v108",
+      "model_filename": "Model_v108.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window92 recent[73,92]+historical",
+      "deployed": false,
+      "created_at": "2026-07-23T13:36:02.853847+00:00"
+    },
+    {
+      "version": "v109",
+      "model_filename": "Model_v109.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window152 recent[148,152]+historical",
+      "deployed": false,
+      "created_at": "2026-07-23T13:37:05.108929+00:00"
+    },
+    {
+      "version": "v110",
+      "model_filename": "Model_v110.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window172 recent[153,172]+historical",
+      "deployed": false,
+      "created_at": "2026-07-23T13:37:32.293477+00:00"
+    },
+    {
+      "version": "v111",
+      "model_filename": "Model_v111.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window192 recent[173,192]+historical",
+      "deployed": false,
+      "created_at": "2026-07-23T13:37:54.977986+00:00"
+    },
+    {
+      "version": "v112",
+      "model_filename": "Model_v112.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window53 recent[49,53]+historical",
+      "deployed": false,
+      "created_at": "2026-07-23T13:55:16.822975+00:00"
+    },
+    {
+      "version": "v113",
+      "model_filename": "Model_v113.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window53 recent[49,53]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:30:14.689971+00:00"
+    },
+    {
+      "version": "v114",
+      "model_filename": "Model_v114.pkl",
+      "metrics": {
+        "fraud_precision": 0.9803921568627451,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9900990099009901,
+        "roc_auc": 1.0,
+        "average_precision": 1.0000000000000002,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window75 recent[71,75]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:30:41.283977+00:00"
+    },
+    {
+      "version": "v115",
+      "model_filename": "Model_v115.pkl",
+      "metrics": {
+        "fraud_precision": 0.9852216748768473,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9925558312655087,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window95 recent[76,95]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:31:03.549567+00:00"
+    },
+    {
+      "version": "v116",
+      "model_filename": "Model_v116.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window153 recent[149,153]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:32:05.931477+00:00"
+    },
+    {
+      "version": "v117",
+      "model_filename": "Model_v117.pkl",
+      "metrics": {
+        "fraud_precision": 0.9803921568627451,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9900990099009901,
+        "roc_auc": 1.0,
+        "average_precision": 1.0000000000000002,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window175 recent[171,175]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:32:30.819282+00:00"
+    },
+    {
+      "version": "v118",
+      "model_filename": "Model_v118.pkl",
+      "metrics": {
+        "fraud_precision": 0.9852216748768473,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9925558312655087,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window195 recent[176,195]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:32:57.508019+00:00"
+    },
+    {
+      "version": "v119",
+      "model_filename": "Model_v119.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window53 recent[49,53]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:42:47.385335+00:00"
+    },
+    {
+      "version": "v120",
+      "model_filename": "Model_v120.pkl",
+      "metrics": {
+        "fraud_precision": 0.9803921568627451,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9900990099009901,
+        "roc_auc": 1.0,
+        "average_precision": 1.0000000000000002,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window75 recent[71,75]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:43:13.884666+00:00"
+    },
+    {
+      "version": "v121",
+      "model_filename": "Model_v121.pkl",
+      "metrics": {
+        "fraud_precision": 0.9852216748768473,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9925558312655087,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window95 recent[76,95]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:43:37.109553+00:00"
+    },
+    {
+      "version": "v122",
+      "model_filename": "Model_v122.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window153 recent[149,153]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:44:39.874283+00:00"
+    },
+    {
+      "version": "v123",
+      "model_filename": "Model_v123.pkl",
+      "metrics": {
+        "fraud_precision": 0.9803921568627451,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9900990099009901,
+        "roc_auc": 1.0,
+        "average_precision": 1.0000000000000002,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window175 recent[171,175]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:45:04.413436+00:00"
+    },
+    {
+      "version": "v124",
+      "model_filename": "Model_v124.pkl",
+      "metrics": {
+        "fraud_precision": 0.9852216748768473,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9925558312655087,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window195 recent[176,195]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:45:28.102024+00:00"
+    },
+    {
+      "version": "v125",
+      "model_filename": "Model_v125.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window253 recent[249,253]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:46:42.977356+00:00"
+    },
+    {
+      "version": "v126",
+      "model_filename": "Model_v126.pkl",
+      "metrics": {
+        "fraud_precision": 0.9803921568627451,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9900990099009901,
+        "roc_auc": 1.0,
+        "average_precision": 1.0000000000000002,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window275 recent[271,275]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:47:08.684513+00:00"
+    },
+    {
+      "version": "v127",
+      "model_filename": "Model_v127.pkl",
+      "metrics": {
+        "fraud_precision": 0.9852216748768473,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9925558312655087,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window295 recent[276,295]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:47:33.125289+00:00"
+    },
+    {
+      "version": "v128",
+      "model_filename": "Model_v128.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window353 recent[349,353]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:48:36.097131+00:00"
+    },
+    {
+      "version": "v129",
+      "model_filename": "Model_v129.pkl",
+      "metrics": {
+        "fraud_precision": 0.9803921568627451,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9900990099009901,
+        "roc_auc": 1.0,
+        "average_precision": 1.0000000000000002,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window375 recent[371,375]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:49:01.541095+00:00"
+    },
+    {
+      "version": "v130",
+      "model_filename": "Model_v130.pkl",
+      "metrics": {
+        "fraud_precision": 0.9852216748768473,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9925558312655087,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window395 recent[376,395]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T13:49:24.774758+00:00"
+    },
+    {
+      "version": "v131",
+      "model_filename": "Model_v131.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window453 recent[449,453]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T14:07:48.291242+00:00"
+    },
+    {
+      "version": "v132",
+      "model_filename": "Model_v132.pkl",
+      "metrics": {
+        "fraud_precision": 0.9803921568627451,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9900990099009901,
+        "roc_auc": 1.0,
+        "average_precision": 1.0000000000000002,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window475 recent[471,475]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T14:08:30.437199+00:00"
+    },
+    {
+      "version": "v133",
+      "model_filename": "Model_v133.pkl",
+      "metrics": {
+        "fraud_precision": 0.9852216748768473,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9925558312655087,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window495 recent[476,495]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T14:08:56.629984+00:00"
+    },
+    {
+      "version": "v134",
+      "model_filename": "Model_v134.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window553 recent[549,553]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T14:10:07.667279+00:00"
+    },
+    {
+      "version": "v135",
+      "model_filename": "Model_v135.pkl",
+      "metrics": {
+        "fraud_precision": 0.9803921568627451,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9900990099009901,
+        "roc_auc": 1.0,
+        "average_precision": 1.0000000000000002,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window575 recent[571,575]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T14:10:36.621700+00:00"
+    },
+    {
+      "version": "v136",
+      "model_filename": "Model_v136.pkl",
+      "metrics": {
+        "fraud_precision": 0.9852216748768473,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9925558312655087,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window595 recent[576,595]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T14:10:59.134256+00:00"
+    },
+    {
+      "version": "v137",
+      "model_filename": "Model_v137.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window52 recent[48,52]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T17:19:19.125645+00:00"
+    },
+    {
+      "version": "v138",
+      "model_filename": "Model_v138.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window72 recent[53,72]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T17:20:09.230762+00:00"
+    },
+    {
+      "version": "v139",
+      "model_filename": "Model_v139.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window92 recent[73,92]+historical",
+      "deployed": false,
+      "created_at": "2026-07-26T17:21:04.468426+00:00"
+    },
+    {
+      "version": "v140",
+      "model_filename": "Model_v140.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window52 recent[48,52]+historical",
+      "deployed": false,
+      "created_at": "2026-08-05T06:50:11.715184+00:00"
+    },
+    {
+      "version": "v141",
+      "model_filename": "Model_v141.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window52 recent[48,52]+historical",
+      "deployed": false,
+      "created_at": "2026-08-12T15:08:13.930930+00:00"
+    },
+    {
+      "version": "v142",
+      "model_filename": "Model_v142.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window72 recent[53,72]+historical",
+      "deployed": false,
+      "created_at": "2026-08-12T15:08:52.847796+00:00"
+    },
+    {
+      "version": "v143",
+      "model_filename": "Model_v143.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window92 recent[73,92]+historical",
+      "deployed": false,
+      "created_at": "2026-08-12T15:09:30.883658+00:00"
+    },
+    {
+      "version": "v144",
+      "model_filename": "Model_v144.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window152 recent[148,152]+historical",
+      "deployed": false,
+      "created_at": "2026-08-12T15:10:48.014997+00:00"
+    },
+    {
+      "version": "v145",
+      "model_filename": "Model_v145.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window172 recent[153,172]+historical",
+      "deployed": false,
+      "created_at": "2026-08-12T15:11:24.435324+00:00"
+    },
+    {
+      "version": "v146",
+      "model_filename": "Model_v146.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window192 recent[173,192]+historical",
+      "deployed": false,
+      "created_at": "2026-08-12T15:11:55.476246+00:00"
+    },
+    {
+      "version": "v147",
+      "model_filename": "Model_v147.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window252 recent[248,252]+historical",
+      "deployed": false,
+      "created_at": "2026-08-12T15:13:07.591212+00:00"
+    },
+    {
+      "version": "v148",
+      "model_filename": "Model_v148.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window272 recent[253,272]+historical",
+      "deployed": false,
+      "created_at": "2026-08-12T15:13:42.180835+00:00"
+    },
+    {
+      "version": "v149",
+      "model_filename": "Model_v149.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window292 recent[273,292]+historical",
+      "deployed": false,
+      "created_at": "2026-08-12T15:14:19.192529+00:00"
+    },
+    {
+      "version": "v150",
+      "model_filename": "Model_v150.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window52 recent[48,52]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:33:17.571106+00:00"
+    },
+    {
+      "version": "v151",
+      "model_filename": "Model_v151.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window72 recent[53,72]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:33:46.352393+00:00"
+    },
+    {
+      "version": "v152",
+      "model_filename": "Model_v152.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window92 recent[73,92]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:34:14.083958+00:00"
+    },
+    {
+      "version": "v153",
+      "model_filename": "Model_v153.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window152 recent[148,152]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:35:18.795622+00:00"
+    },
+    {
+      "version": "v154",
+      "model_filename": "Model_v154.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window172 recent[153,172]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:35:46.145203+00:00"
+    },
+    {
+      "version": "v155",
+      "model_filename": "Model_v155.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window192 recent[173,192]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:36:11.356039+00:00"
+    },
+    {
+      "version": "v156",
+      "model_filename": "Model_v156.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window252 recent[248,252]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:37:17.374210+00:00"
+    },
+    {
+      "version": "v157",
+      "model_filename": "Model_v157.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window272 recent[253,272]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:37:42.617482+00:00"
+    },
+    {
+      "version": "v158",
+      "model_filename": "Model_v158.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window292 recent[273,292]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:38:06.614450+00:00"
+    },
+    {
+      "version": "v159",
+      "model_filename": "Model_v159.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window352 recent[348,352]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:39:14.901561+00:00"
+    },
+    {
+      "version": "v160",
+      "model_filename": "Model_v160.pkl",
+      "metrics": {
+        "fraud_precision": 0.9945945945945946,
+        "fraud_recall": 0.9533678756476683,
+        "fraud_f1": 0.9735449735449735,
+        "roc_auc": 0.9998270638359037,
+        "average_precision": 0.9979946405984861,
+        "n_test": 2500,
+        "n_test_fraud": 193
+      },
+      "trained_on": "retrain@window372 recent[353,372]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:39:42.521302+00:00"
+    },
+    {
+      "version": "v161",
+      "model_filename": "Model_v161.pkl",
+      "metrics": {
+        "fraud_precision": 0.9797979797979798,
+        "fraud_recall": 0.9797979797979798,
+        "fraud_f1": 0.9797979797979798,
+        "roc_auc": 0.9999166293692792,
+        "average_precision": 0.9990424714885866,
+        "n_test": 2500,
+        "n_test_fraud": 198
+      },
+      "trained_on": "retrain@window392 recent[373,392]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:40:09.334284+00:00"
+    },
+    {
+      "version": "v162",
+      "model_filename": "Model_v162.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.875,
+        "fraud_f1": 0.8842105263157894,
+        "roc_auc": 0.9979780473714616,
+        "average_precision": 0.9789385882755774,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window452 recent[448,452]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:41:18.224613+00:00"
+    },
+    {
+      "version": "v163",
+      "model_filename": "Model_v163.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window53 recent[49,53]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T12:48:38.845449+00:00"
+    },
+    {
+      "version": "v164",
+      "model_filename": "Model_v164.pkl",
+      "metrics": {
+        "fraud_precision": 0.9411764705882353,
+        "fraud_recall": 0.8421052631578947,
+        "fraud_f1": 0.8888888888888888,
+        "roc_auc": 0.9968671679197995,
+        "average_precision": 0.9689076207102005,
+        "n_test": 500,
+        "n_test_fraud": 38
+      },
+      "trained_on": "retrain@window3 recent[-1,3]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T13:34:37.081210+00:00"
+    },
+    {
+      "version": "v165",
+      "model_filename": "Model_v165.pkl",
+      "metrics": {
+        "fraud_precision": 0.9411764705882353,
+        "fraud_recall": 0.8421052631578947,
+        "fraud_f1": 0.8888888888888888,
+        "roc_auc": 0.9968671679197995,
+        "average_precision": 0.9689076207102005,
+        "n_test": 500,
+        "n_test_fraud": 38
+      },
+      "trained_on": "retrain@window3 recent[-1,3]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T13:34:54.324998+00:00"
+    },
+    {
+      "version": "v166",
+      "model_filename": "Model_v166.pkl",
+      "metrics": {
+        "fraud_precision": 1.0,
+        "fraud_recall": 0.82,
+        "fraud_f1": 0.9010989010989011,
+        "roc_auc": 0.9971130434782609,
+        "average_precision": 0.9776255511042387,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window22 recent[18,22]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T13:39:33.863182+00:00"
+    },
+    {
+      "version": "v167",
+      "model_filename": "Model_v167.pkl",
+      "metrics": {
+        "fraud_precision": 0.9595959595959596,
+        "fraud_recall": 0.95,
+        "fraud_f1": 0.9547738693467337,
+        "roc_auc": 0.9994065217391304,
+        "average_precision": 0.9933259177109177,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window60 recent[41,60]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T13:42:45.289344+00:00"
+    },
+    {
+      "version": "v168",
+      "model_filename": "Model_v168.pkl",
+      "metrics": {
+        "fraud_precision": 1.0,
+        "fraud_recall": 0.82,
+        "fraud_f1": 0.9010989010989011,
+        "roc_auc": 0.9971130434782609,
+        "average_precision": 0.9776255511042387,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window22 recent[18,22]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T13:44:15.515357+00:00"
+    },
+    {
+      "version": "v169",
+      "model_filename": "Model_v169.pkl",
+      "metrics": {
+        "fraud_precision": 0.95,
+        "fraud_recall": 0.7755102040816326,
+        "fraud_f1": 0.8539325842696629,
+        "roc_auc": 0.9956065759637189,
+        "average_precision": 0.9601182830508225,
+        "n_test": 625,
+        "n_test_fraud": 49
+      },
+      "trained_on": "retrain@window62 recent[58,62]+historical",
+      "deployed": false,
+      "created_at": "2026-08-24T13:45:01.146314+00:00"
+    },
+    {
+      "version": "v170",
+      "model_filename": "Model_v170.pkl",
+      "metrics": {
+        "fraud_precision": 1.0,
+        "fraud_recall": 0.82,
+        "fraud_f1": 0.9010989010989011,
+        "roc_auc": 0.9971130434782609,
+        "average_precision": 0.9776255511042387,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window22 recent[18,22]+historical",
+      "deployed": true,
+      "created_at": "2026-08-24T14:00:59.991513+00:00"
+    },
+    {
+      "version": "v171",
+      "model_filename": "Model_v171.pkl",
+      "metrics": {
+        "fraud_precision": 1.0,
+        "fraud_recall": 0.82,
+        "fraud_f1": 0.9010989010989011,
+        "roc_auc": 0.9971130434782609,
+        "average_precision": 0.9776255511042387,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window22 recent[18,22]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:25:54.431722+00:00"
+    },
+    {
+      "version": "v172",
+      "model_filename": "Model_v172.pkl",
+      "metrics": {
+        "fraud_precision": 0.95,
+        "fraud_recall": 0.7755102040816326,
+        "fraud_f1": 0.8539325842696629,
+        "roc_auc": 0.9956065759637189,
+        "average_precision": 0.9601182830508225,
+        "n_test": 625,
+        "n_test_fraud": 49
+      },
+      "trained_on": "retrain@window62 recent[58,62]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:26:49.321739+00:00"
+    },
+    {
+      "version": "v173",
+      "model_filename": "Model_v173.pkl",
+      "metrics": {
+        "fraud_precision": 0.9787234042553191,
+        "fraud_recall": 0.9019607843137255,
+        "fraud_f1": 0.9387755102040817,
+        "roc_auc": 0.9880098380815742,
+        "average_precision": 0.9579014222926823,
+        "n_test": 625,
+        "n_test_fraud": 51
+      },
+      "trained_on": "retrain@window102 recent[98,102]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:27:34.133169+00:00"
+    },
+    {
+      "version": "v174",
+      "model_filename": "Model_v174.pkl",
+      "metrics": {
+        "fraud_precision": 0.9743589743589743,
+        "fraud_recall": 0.8444444444444444,
+        "fraud_f1": 0.9047619047619048,
+        "roc_auc": 0.9951724137931034,
+        "average_precision": 0.9639486031063784,
+        "n_test": 625,
+        "n_test_fraud": 45
+      },
+      "trained_on": "retrain@window142 recent[138,142]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:28:24.127326+00:00"
+    },
+    {
+      "version": "v175",
+      "model_filename": "Model_v175.pkl",
+      "metrics": {
+        "fraud_precision": 0.94,
+        "fraud_recall": 0.94,
+        "fraud_f1": 0.94,
+        "roc_auc": 0.9988173913043478,
+        "average_precision": 0.9868076955639885,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window182 recent[178,182]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:29:20.694579+00:00"
+    },
+    {
+      "version": "v176",
+      "model_filename": "Model_v176.pkl",
+      "metrics": {
+        "fraud_precision": 0.9545454545454546,
+        "fraud_recall": 0.84,
+        "fraud_f1": 0.8936170212765957,
+        "roc_auc": 0.996486956521739,
+        "average_precision": 0.9666256997380522,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window222 recent[218,222]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:30:06.342312+00:00"
+    },
+    {
+      "version": "v177",
+      "model_filename": "Model_v177.pkl",
+      "metrics": {
+        "fraud_precision": 0.9545454545454546,
+        "fraud_recall": 0.8571428571428571,
+        "fraud_f1": 0.9032258064516129,
+        "roc_auc": 0.996811224489796,
+        "average_precision": 0.9669974499659792,
+        "n_test": 625,
+        "n_test_fraud": 49
+      },
+      "trained_on": "retrain@window262 recent[258,262]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:30:51.326729+00:00"
+    },
+    {
+      "version": "v178",
+      "model_filename": "Model_v178.pkl",
+      "metrics": {
+        "fraud_precision": 1.0,
+        "fraud_recall": 0.8775510204081632,
+        "fraud_f1": 0.9347826086956522,
+        "roc_auc": 0.9996811224489797,
+        "average_precision": 0.9963549232779723,
+        "n_test": 625,
+        "n_test_fraud": 49
+      },
+      "trained_on": "retrain@window302 recent[298,302]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:31:38.388169+00:00"
+    },
+    {
+      "version": "v179",
+      "model_filename": "Model_v179.pkl",
+      "metrics": {
+        "fraud_precision": 0.96875,
+        "fraud_recall": 0.7380952380952381,
+        "fraud_f1": 0.8378378378378378,
+        "roc_auc": 0.9927305399003512,
+        "average_precision": 0.9378818753847974,
+        "n_test": 625,
+        "n_test_fraud": 42
+      },
+      "trained_on": "retrain@window342 recent[338,342]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:32:20.084350+00:00"
+    },
+    {
+      "version": "v180",
+      "model_filename": "Model_v180.pkl",
+      "metrics": {
+        "fraud_precision": 0.9411764705882353,
+        "fraud_recall": 0.9230769230769231,
+        "fraud_f1": 0.9320388349514563,
+        "roc_auc": 0.999362330514163,
+        "average_precision": 0.9930734721403784,
+        "n_test": 625,
+        "n_test_fraud": 52
+      },
+      "trained_on": "retrain@window382 recent[378,382]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:33:01.685417+00:00"
+    },
+    {
+      "version": "v181",
+      "model_filename": "Model_v181.pkl",
+      "metrics": {
+        "fraud_precision": 0.9761904761904762,
+        "fraud_recall": 0.8913043478260869,
+        "fraud_f1": 0.9318181818181818,
+        "roc_auc": 0.9932417211083577,
+        "average_precision": 0.9597697229577178,
+        "n_test": 625,
+        "n_test_fraud": 46
+      },
+      "trained_on": "retrain@window422 recent[418,422]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:33:44.563466+00:00"
+    },
+    {
+      "version": "v182",
+      "model_filename": "Model_v182.pkl",
+      "metrics": {
+        "fraud_precision": 0.9642857142857143,
+        "fraud_recall": 0.9152542372881356,
+        "fraud_f1": 0.9391304347826087,
+        "roc_auc": 0.9982332155477032,
+        "average_precision": 0.9865060959652296,
+        "n_test": 625,
+        "n_test_fraud": 59
+      },
+      "trained_on": "retrain@window462 recent[458,462]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:34:30.017228+00:00"
+    },
+    {
+      "version": "v183",
+      "model_filename": "Model_v183.pkl",
+      "metrics": {
+        "fraud_precision": 0.9523809523809523,
+        "fraud_recall": 0.9090909090909091,
+        "fraud_f1": 0.9302325581395349,
+        "roc_auc": 0.9894382725708027,
+        "average_precision": 0.9597547356194559,
+        "n_test": 625,
+        "n_test_fraud": 44
+      },
+      "trained_on": "retrain@window502 recent[498,502]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:35:20.091030+00:00"
+    },
+    {
+      "version": "v184",
+      "model_filename": "Model_v184.pkl",
+      "metrics": {
+        "fraud_precision": 0.92,
+        "fraud_recall": 0.92,
+        "fraud_f1": 0.92,
+        "roc_auc": 0.9978782608695651,
+        "average_precision": 0.9803555896446654,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window542 recent[538,542]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:36:05.319456+00:00"
+    },
+    {
+      "version": "v185",
+      "model_filename": "Model_v185.pkl",
+      "metrics": {
+        "fraud_precision": 0.9512195121951219,
+        "fraud_recall": 0.8125,
+        "fraud_f1": 0.8764044943820225,
+        "roc_auc": 0.9928509532062392,
+        "average_precision": 0.9584988595998196,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window582 recent[578,582]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:36:51.129236+00:00"
+    },
+    {
+      "version": "v186",
+      "model_filename": "Model_v186.pkl",
+      "metrics": {
+        "fraud_precision": 1.0,
+        "fraud_recall": 0.7755102040816326,
+        "fraud_f1": 0.8735632183908046,
+        "roc_auc": 0.9856150793650795,
+        "average_precision": 0.9335908744597252,
+        "n_test": 625,
+        "n_test_fraud": 49
+      },
+      "trained_on": "retrain@window622 recent[618,622]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:37:36.559242+00:00"
+    },
+    {
+      "version": "v187",
+      "model_filename": "Model_v187.pkl",
+      "metrics": {
+        "fraud_precision": 0.9791666666666666,
+        "fraud_recall": 0.9215686274509803,
+        "fraud_f1": 0.9494949494949495,
+        "roc_auc": 0.9876340780214524,
+        "average_precision": 0.9781406820997366,
+        "n_test": 625,
+        "n_test_fraud": 51
+      },
+      "trained_on": "retrain@window662 recent[658,662]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:38:22.226620+00:00"
+    },
+    {
+      "version": "v188",
+      "model_filename": "Model_v188.pkl",
+      "metrics": {
+        "fraud_precision": 0.9583333333333334,
+        "fraud_recall": 0.9019607843137255,
+        "fraud_f1": 0.9292929292929293,
+        "roc_auc": 0.9965156794425087,
+        "average_precision": 0.9750710045420196,
+        "n_test": 625,
+        "n_test_fraud": 51
+      },
+      "trained_on": "retrain@window702 recent[698,702]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:39:25.260357+00:00"
+    },
+    {
+      "version": "v189",
+      "model_filename": "Model_v189.pkl",
+      "metrics": {
+        "fraud_precision": 0.9555555555555556,
+        "fraud_recall": 0.8775510204081632,
+        "fraud_f1": 0.9148936170212766,
+        "roc_auc": 0.9973072562358276,
+        "average_precision": 0.9748704485375153,
+        "n_test": 625,
+        "n_test_fraud": 49
+      },
+      "trained_on": "retrain@window742 recent[738,742]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:40:18.054460+00:00"
+    },
+    {
+      "version": "v190",
+      "model_filename": "Model_v190.pkl",
+      "metrics": {
+        "fraud_precision": 0.9387755102040817,
+        "fraud_recall": 0.92,
+        "fraud_f1": 0.9292929292929293,
+        "roc_auc": 0.9991652173913044,
+        "average_precision": 0.9899864119799617,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window782 recent[778,782]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:40:58.555636+00:00"
+    },
+    {
+      "version": "v191",
+      "model_filename": "Model_v191.pkl",
+      "metrics": {
+        "fraud_precision": 0.98,
+        "fraud_recall": 0.9423076923076923,
+        "fraud_f1": 0.9607843137254902,
+        "roc_auc": 0.9947979594576454,
+        "average_precision": 0.9706180159853979,
+        "n_test": 625,
+        "n_test_fraud": 52
+      },
+      "trained_on": "retrain@window822 recent[818,822]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:41:42.810050+00:00"
+    },
+    {
+      "version": "v192",
+      "model_filename": "Model_v192.pkl",
+      "metrics": {
+        "fraud_precision": 0.9743589743589743,
+        "fraud_recall": 0.7916666666666666,
+        "fraud_f1": 0.8735632183908046,
+        "roc_auc": 0.9975808781051415,
+        "average_precision": 0.9775368278716765,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window862 recent[858,862]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:42:31.452794+00:00"
+    },
+    {
+      "version": "v193",
+      "model_filename": "Model_v193.pkl",
+      "metrics": {
+        "fraud_precision": 1.0,
+        "fraud_recall": 0.9259259259259259,
+        "fraud_f1": 0.9615384615384616,
+        "roc_auc": 0.99899461633262,
+        "average_precision": 0.9917772367620207,
+        "n_test": 625,
+        "n_test_fraud": 54
+      },
+      "trained_on": "retrain@window902 recent[898,902]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:43:22.254820+00:00"
+    },
+    {
+      "version": "v194",
+      "model_filename": "Model_v194.pkl",
+      "metrics": {
+        "fraud_precision": 0.9591836734693877,
+        "fraud_recall": 0.9591836734693877,
+        "fraud_f1": 0.9591836734693877,
+        "roc_auc": 0.9993976757369615,
+        "average_precision": 0.9937062560411791,
+        "n_test": 625,
+        "n_test_fraud": 49
+      },
+      "trained_on": "retrain@window942 recent[938,942]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:44:15.354835+00:00"
+    },
+    {
+      "version": "v195",
+      "model_filename": "Model_v195.pkl",
+      "metrics": {
+        "fraud_precision": 0.9629629629629629,
+        "fraud_recall": 0.9285714285714286,
+        "fraud_f1": 0.9454545454545454,
+        "roc_auc": 0.9977403966859151,
+        "average_precision": 0.9841882673216586,
+        "n_test": 625,
+        "n_test_fraud": 56
+      },
+      "trained_on": "retrain@window982 recent[978,982]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:45:07.434866+00:00"
+    },
+    {
+      "version": "v196",
+      "model_filename": "Model_v196.pkl",
+      "metrics": {
+        "fraud_precision": 1.0,
+        "fraud_recall": 0.8235294117647058,
+        "fraud_f1": 0.9032258064516129,
+        "roc_auc": 0.9926897588303614,
+        "average_precision": 0.9652651243701622,
+        "n_test": 625,
+        "n_test_fraud": 51
+      },
+      "trained_on": "retrain@window1022 recent[1018,1022]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:45:55.994878+00:00"
+    },
+    {
+      "version": "v197",
+      "model_filename": "Model_v197.pkl",
+      "metrics": {
+        "fraud_precision": 0.9411764705882353,
+        "fraud_recall": 0.9795918367346939,
+        "fraud_f1": 0.96,
+        "roc_auc": 0.9993976757369615,
+        "average_precision": 0.9929131812749873,
+        "n_test": 625,
+        "n_test_fraud": 49
+      },
+      "trained_on": "retrain@window1062 recent[1058,1062]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:46:51.456088+00:00"
+    },
+    {
+      "version": "v198",
+      "model_filename": "Model_v198.pkl",
+      "metrics": {
+        "fraud_precision": 0.9574468085106383,
+        "fraud_recall": 0.8823529411764706,
+        "fraud_f1": 0.9183673469387755,
+        "roc_auc": 0.9976429596228735,
+        "average_precision": 0.98143866669256,
+        "n_test": 625,
+        "n_test_fraud": 51
+      },
+      "trained_on": "retrain@window1102 recent[1098,1102]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:47:45.508121+00:00"
+    },
+    {
+      "version": "v199",
+      "model_filename": "Model_v199.pkl",
+      "metrics": {
+        "fraud_precision": 0.8936170212765957,
+        "fraud_recall": 0.8571428571428571,
+        "fraud_f1": 0.875,
+        "roc_auc": 0.9973072562358276,
+        "average_precision": 0.9724178568478514,
+        "n_test": 625,
+        "n_test_fraud": 49
+      },
+      "trained_on": "retrain@window1142 recent[1138,1142]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:48:39.835200+00:00"
+    },
+    {
+      "version": "v200",
+      "model_filename": "Model_v200.pkl",
+      "metrics": {
+        "fraud_precision": 0.9767441860465116,
+        "fraud_recall": 0.8571428571428571,
+        "fraud_f1": 0.9130434782608695,
+        "roc_auc": 0.996279761904762,
+        "average_precision": 0.9722301757548837,
+        "n_test": 625,
+        "n_test_fraud": 49
+      },
+      "trained_on": "retrain@window1182 recent[1178,1182]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:49:33.604948+00:00"
+    },
+    {
+      "version": "v201",
+      "model_filename": "Model_v201.pkl",
+      "metrics": {
+        "fraud_precision": 0.96,
+        "fraud_recall": 0.9056603773584906,
+        "fraud_f1": 0.9320388349514563,
+        "roc_auc": 0.9979218894313233,
+        "average_precision": 0.983725982389898,
+        "n_test": 625,
+        "n_test_fraud": 53
+      },
+      "trained_on": "retrain@window1222 recent[1218,1222]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:50:26.192414+00:00"
+    },
+    {
+      "version": "v202",
+      "model_filename": "Model_v202.pkl",
+      "metrics": {
+        "fraud_precision": 0.9166666666666666,
+        "fraud_recall": 0.9565217391304348,
+        "fraud_f1": 0.9361702127659575,
+        "roc_auc": 0.998610798227829,
+        "average_precision": 0.9873983502692731,
+        "n_test": 625,
+        "n_test_fraud": 46
+      },
+      "trained_on": "retrain@window1262 recent[1258,1262]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:51:16.202660+00:00"
+    },
+    {
+      "version": "v203",
+      "model_filename": "Model_v203.pkl",
+      "metrics": {
+        "fraud_precision": 1.0,
+        "fraud_recall": 0.8823529411764706,
+        "fraud_f1": 0.9375,
+        "roc_auc": 0.9977795996447358,
+        "average_precision": 0.9824683881463685,
+        "n_test": 625,
+        "n_test_fraud": 51
+      },
+      "trained_on": "retrain@window1302 recent[1298,1302]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:52:02.650228+00:00"
+    },
+    {
+      "version": "v204",
+      "model_filename": "Model_v204.pkl",
+      "metrics": {
+        "fraud_precision": 1.0,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.967741935483871,
+        "roc_auc": 0.9996389370306181,
+        "average_precision": 0.9964080459770115,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window1342 recent[1338,1342]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:52:52.948621+00:00"
+    },
+    {
+      "version": "v205",
+      "model_filename": "Model_v205.pkl",
+      "metrics": {
+        "fraud_precision": 0.9795918367346939,
+        "fraud_recall": 0.8727272727272727,
+        "fraud_f1": 0.9230769230769231,
+        "roc_auc": 0.9914194577352472,
+        "average_precision": 0.955026335091935,
+        "n_test": 625,
+        "n_test_fraud": 55
+      },
+      "trained_on": "retrain@window1382 recent[1378,1382]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:53:42.207483+00:00"
+    },
+    {
+      "version": "v206",
+      "model_filename": "Model_v206.pkl",
+      "metrics": {
+        "fraud_precision": 0.9333333333333333,
+        "fraud_recall": 0.8936170212765957,
+        "fraud_f1": 0.9130434782608695,
+        "roc_auc": 0.9981226533166458,
+        "average_precision": 0.9801111979831589,
+        "n_test": 625,
+        "n_test_fraud": 47
+      },
+      "trained_on": "retrain@window1422 recent[1418,1422]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:54:31.016265+00:00"
+    },
+    {
+      "version": "v207",
+      "model_filename": "Model_v207.pkl",
+      "metrics": {
+        "fraud_precision": 0.8823529411764706,
+        "fraud_recall": 0.8823529411764706,
+        "fraud_f1": 0.8823529411764706,
+        "roc_auc": 0.9971988795518207,
+        "average_precision": 0.9701792123616719,
+        "n_test": 625,
+        "n_test_fraud": 51
+      },
+      "trained_on": "retrain@window1462 recent[1458,1462]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:55:17.674692+00:00"
+    },
+    {
+      "version": "v208",
+      "model_filename": "Model_v208.pkl",
+      "metrics": {
+        "fraud_precision": 0.9347826086956522,
+        "fraud_recall": 0.8775510204081632,
+        "fraud_f1": 0.9052631578947369,
+        "roc_auc": 0.996031746031746,
+        "average_precision": 0.9678617894363839,
+        "n_test": 625,
+        "n_test_fraud": 49
+      },
+      "trained_on": "retrain@window1502 recent[1498,1502]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:56:06.980325+00:00"
+    },
+    {
+      "version": "v209",
+      "model_filename": "Model_v209.pkl",
+      "metrics": {
+        "fraud_precision": 0.9272727272727272,
+        "fraud_recall": 0.9622641509433962,
+        "fraud_f1": 0.9444444444444444,
+        "roc_auc": 0.996470510621454,
+        "average_precision": 0.981180615672102,
+        "n_test": 625,
+        "n_test_fraud": 53
+      },
+      "trained_on": "retrain@window1542 recent[1538,1542]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:56:59.703894+00:00"
+    },
+    {
+      "version": "v210",
+      "model_filename": "Model_v210.pkl",
+      "metrics": {
+        "fraud_precision": 0.975,
+        "fraud_recall": 0.8125,
+        "fraud_f1": 0.8863636363636364,
+        "roc_auc": 0.9964254766031196,
+        "average_precision": 0.9671614872087342,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window1582 recent[1578,1582]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:57:54.346246+00:00"
+    },
+    {
+      "version": "v211",
+      "model_filename": "Model_v211.pkl",
+      "metrics": {
+        "fraud_precision": 1.0,
+        "fraud_recall": 0.94,
+        "fraud_f1": 0.9690721649484536,
+        "roc_auc": 0.9994782608695653,
+        "average_precision": 0.9944431738771362,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window1622 recent[1618,1622]+historical",
+      "deployed": false,
+      "created_at": "2026-10-10T15:58:52.191704+00:00"
+    },
+    {
+      "version": "v212",
+      "model_filename": "Model_v212.pkl",
+      "metrics": {
+        "fraud_precision": 1.0,
+        "fraud_recall": 0.82,
+        "fraud_f1": 0.9010989010989011,
+        "roc_auc": 0.9971130434782609,
+        "average_precision": 0.9776255511042387,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window22 recent[18,22]+historical",
+      "deployed": false,
+      "created_at": "2026-10-12T17:28:31.539607+00:00"
+    },
+    {
+      "version": "v213",
+      "model_filename": "Model_v213.pkl",
+      "metrics": {
+        "fraud_precision": 0.95,
+        "fraud_recall": 0.7755102040816326,
+        "fraud_f1": 0.8539325842696629,
+        "roc_auc": 0.9956065759637189,
+        "average_precision": 0.9601182830508225,
+        "n_test": 625,
+        "n_test_fraud": 49
+      },
+      "trained_on": "retrain@window62 recent[58,62]+historical",
+      "deployed": false,
+      "created_at": "2026-10-12T17:29:17.198458+00:00"
+    },
+    {
+      "version": "v214",
+      "model_filename": "Model_v214.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window53 recent[49,53]+historical",
+      "deployed": false,
+      "created_at": "2026-10-14T14:34:05.489354+00:00"
+    },
+    {
+      "version": "v215",
+      "model_filename": "Model_v215.pkl",
+      "metrics": {
+        "fraud_precision": 0.9803921568627451,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9900990099009901,
+        "roc_auc": 1.0,
+        "average_precision": 1.0000000000000002,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window75 recent[71,75]+historical",
+      "deployed": false,
+      "created_at": "2026-10-14T14:34:41.718593+00:00"
+    },
+    {
+      "version": "v216",
+      "model_filename": "Model_v216.pkl",
+      "metrics": {
+        "fraud_precision": 0.9852216748768473,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9925558312655087,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window95 recent[76,95]+historical",
+      "deployed": false,
+      "created_at": "2026-10-14T14:35:18.105124+00:00"
+    },
+    {
+      "version": "v217",
+      "model_filename": "Model_v217.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window153 recent[149,153]+historical",
+      "deployed": false,
+      "created_at": "2026-10-14T14:36:48.020416+00:00"
+    },
+    {
+      "version": "v218",
+      "model_filename": "Model_v218.pkl",
+      "metrics": {
+        "fraud_precision": 0.9803921568627451,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9900990099009901,
+        "roc_auc": 1.0,
+        "average_precision": 1.0000000000000002,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window175 recent[171,175]+historical",
+      "deployed": false,
+      "created_at": "2026-10-14T14:37:19.384604+00:00"
+    },
+    {
+      "version": "v219",
+      "model_filename": "Model_v219.pkl",
+      "metrics": {
+        "fraud_precision": 0.9852216748768473,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9925558312655087,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window195 recent[176,195]+historical",
+      "deployed": false,
+      "created_at": "2026-10-14T14:37:54.054174+00:00"
+    },
+    {
+      "version": "v220",
+      "model_filename": "Model_v220.pkl",
+      "metrics": {
+        "fraud_precision": 0.9782608695652174,
+        "fraud_recall": 0.9375,
+        "fraud_f1": 0.9574468085106383,
+        "roc_auc": 0.9996750433275563,
+        "average_precision": 0.9964711946593596,
+        "n_test": 625,
+        "n_test_fraud": 48
+      },
+      "trained_on": "retrain@window253 recent[249,253]+historical",
+      "deployed": false,
+      "created_at": "2026-10-14T14:39:06.377847+00:00"
+    },
+    {
+      "version": "v221",
+      "model_filename": "Model_v221.pkl",
+      "metrics": {
+        "fraud_precision": 0.9803921568627451,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9900990099009901,
+        "roc_auc": 1.0,
+        "average_precision": 1.0000000000000002,
+        "n_test": 625,
+        "n_test_fraud": 50
+      },
+      "trained_on": "retrain@window275 recent[271,275]+historical",
+      "deployed": false,
+      "created_at": "2026-10-14T14:39:35.540431+00:00"
+    },
+    {
+      "version": "v222",
+      "model_filename": "Model_v222.pkl",
+      "metrics": {
+        "fraud_precision": 0.9852216748768473,
+        "fraud_recall": 1.0,
+        "fraud_f1": 0.9925558312655087,
+        "roc_auc": 1.0,
+        "average_precision": 1.0,
+        "n_test": 2500,
+        "n_test_fraud": 200
+      },
+      "trained_on": "retrain@window295 recent[276,295]+historical",
+      "deployed": false,
+      "created_at": "2026-10-14T14:40:18.437205+00:00"
+    }
+  ],
+  "deployment_history": [
+    "v112",
+    "v118",
+    "v140",
+    "v155",
+    "v161",
+    "v118",
+    "v165",
+    "v166",
+    "v167",
+    "v166",
+    "v170"
+  ]
+}

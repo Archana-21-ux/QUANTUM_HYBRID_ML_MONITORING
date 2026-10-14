@@ -1,0 +1,13 @@
+feature_map,scenario,subset,detected,delay,false_alarm_rate,separation,mean_wall_clock_ms
+angle,sudden_covariate_shift_v1,population,True,0,0.0,36.45,13.7
+angle,sudden_covariate_shift_v1,fraud,True,0,0.0,18.66,11.6
+zz,sudden_covariate_shift_v1,population,True,0,0.0,38.22,96.0
+zz,sudden_covariate_shift_v1,fraud,True,0,0.0,18.21,62.2
+reupload,sudden_covariate_shift_v1,population,True,0,0.0,29.75,34.6
+reupload,sudden_covariate_shift_v1,fraud,True,0,0.0,16.71,26.2
+angle,gradual_covariate_shift_v1,population,True,1,0.0,104.51,15.3
+angle,gradual_covariate_shift_v1,fraud,True,4,0.0,16.43,11.3
+zz,gradual_covariate_shift_v1,population,True,1,0.0,103.68,110.0
+zz,gradual_covariate_shift_v1,fraud,True,4,0.0,13.26,68.8
+reupload,gradual_covariate_shift_v1,population,True,1,0.0,68.49,39.7
+reupload,gradual_covariate_shift_v1,fraud,True,4,0.0,14.26,29.4

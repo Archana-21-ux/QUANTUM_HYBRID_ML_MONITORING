@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# Data (large / regenerable)
+data/raw/*
+!data/raw/.gitkeep
+data/drift_scenarios/*
+!data/drift_scenarios/.gitkeep
+
+# Models (large / regenerable, versioned via registry.json instead)
+src/quantumguard/models/*.pkl
+!src/quantumguard/models/registry.json
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Dashboard
+dashboard/node_modules/
+dashboard/dist/
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# AI assistant / local tooling
+.claude/
+CLAUDE.md
+
+# Paper drafts and LaTeX build output (kept out of the code repo)
+main.tex
+main.aux
+main.log
+main.pdf
+*.synctex.gz
+paper_rewrite.md
+figures/

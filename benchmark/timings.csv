@@ -1,0 +1,7 @@
+detector,n_windows,mean_ms,median_ms,max_ms
+classical_cds,10,17.1,12.8,57.9
+quantum_angle,10,19.0,18.3,33.1
+quantum_zz,10,161.4,171.7,231.8
+quantum_reupload,10,62.4,69.9,80.0
+mmd_rbf,10,50.6,54.2,70.9
+domain_classifier,10,35.2,38.3,45.1
