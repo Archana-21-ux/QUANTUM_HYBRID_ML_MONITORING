@@ -28,6 +28,13 @@ dashboard/dist/
 .DS_Store
 .vscode/
 
+# Secrets: API keys / credentials must never be committed
+.env
+.env.*
+*.pem
+*.key
+secrets*
+
 # AI assistant / local tooling
 .claude/
 CLAUDE.md
